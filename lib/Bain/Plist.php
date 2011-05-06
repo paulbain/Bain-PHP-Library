@@ -68,6 +68,7 @@ class Bain_Plist{
                         $xml.='<key>'.$k.'</key>';
                         $xml.='<array>'.$this->toXml($v,$depth+1,false).'</array>';
                     } else {
+                        $xml.='<key>'.$k.'</key>';
                         $xml.=$this->toXml($v,$depth+1);
                     }
                 } else {
